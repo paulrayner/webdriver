@@ -59,3 +59,11 @@ Feature: Packing List Filtered by Weather
     | item      |
     | underwear |
     | sandals   |
+  
+  Scenario: Bring nothing
+    Given a master packing list with:
+    | item      | when to bring   |
+    | sandals   | dry, warm, hot  |
+    | umbrella  | rainy           |
+    When I filter my packing list for cold weather
+    Then the filtered packing list should be empty
