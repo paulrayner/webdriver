@@ -3,6 +3,7 @@ package cuke4duke.webdriver;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.containsString;
 
+import cuke4duke.annotation.EN;
 import cuke4duke.annotation.I18n.EN.*;
 import org.openqa.selenium.WebDriver;
 
@@ -15,7 +16,7 @@ public class ResultsPage {
         d = facade.getWebDriver();
     }
 
-    @Then("^I should see$")
+    @EN.Then("^I should see$")
     public void shouldSee(String results) {
          System.out.println("Page title is: " + d.getTitle());
         assertThat(d.getPageSource(), containsString(results));

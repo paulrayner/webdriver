@@ -1,14 +1,14 @@
-Feature: Search
-  In order to learn more
-  As an information seeker
-  I want to find more information
-
-  # <em>Cucumber</em> itself
-  #
-  Scenario: Find what I'm looking for
-    Given I am on the Google search page
-    When I search for "virtual genius"
-    Then I should see
-      """
-      AGILITY. CRAFT. ARCHITECTURE.
-      """
+Feature: Packing List Filtered by Weather
+  In order to pack efficiently
+  As a traveller
+  I want to filter my packing list by weather conditions I supply
+    
+  Scenario: Filter packing list by weather conditions
+    Given a master packing list with:
+    | item      |
+    | underwear |
+    | sandals   |
+    When I filter my packing list for cold weather
+    Then the list should contain only:
+    | item      |
+    | underwear |

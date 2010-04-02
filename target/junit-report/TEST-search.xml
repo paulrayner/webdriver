@@ -1,5 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite errors="0" failures="0" name="Search" tests="1" time="2.768000">
-<testcase classname="Search.Find what I'm looking for" name="Find what I'm looking for" time="2.768000">
-</testcase>
+<testsuite errors="0" failures="0" name="Packing List Filtered by Weather" tests="0" time="0.235000">
 </testsuite>
